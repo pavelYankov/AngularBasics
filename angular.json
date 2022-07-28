@@ -55,6 +55,14 @@
                                     "maximumError": "5mb"
                                 }
                             ]
+                        },
+                        "development": {
+                            "buildOptimizer": false,
+                            "optimization": false,
+                            "vendorChunk": true,
+                            "extractLicenses": false,
+                            "sourceMap": true,
+                            "namedChunks": true
                         }
                     }
                 },
@@ -66,8 +74,12 @@
                     "configurations": {
                         "production": {
                             "browserTarget": "exercise-app:build:production"
+                        },
+                        "development": {
+                            "browserTarget": "exercise-app:build:development"
                         }
-                    }
+                    },
+                    "defaultConfiguration": "development"
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
